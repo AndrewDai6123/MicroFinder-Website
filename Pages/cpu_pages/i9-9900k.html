@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">Intel - Core i9-9900K</h1>
+            <p>Intel - Core i9-9900K 9th Generation 8-Core - 16-Thread - 3.6 GHz (5.0 GHz Turbo) Socket LGA 1151 Unlocked Desktop Processor.</p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/CPUPages/i9-9900K/Intel-Core-i9-9900K.jpg"alt = "Intel - Core i9-9900K">
+                        <figcaption><strong>$395.00 - $439.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddCPU(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>Intel</li>
+                    <li><strong>Core Count: </strong>8</li>
+                    <li><strong>Core Clock: </strong>3.6 GHz </li>
+                    <li><strong>Boosy Clock: </strong>5 GHz </li>
+                    <li><strong>TDP: </strong>95 W</li>
+                    <li><strong>Series: </strong>Intel Core i9</li>
+                    <li><strong>Microarchitecture: </strong>Coffee Lake Refresh</li>
+                    <li><strong>Core Family: </strong>Coffee Lake Refresh</li>
+                    <li><strong>Socket: </strong>LGA1151</li>
+                    <li><strong>Integrated Graphics: </strong>Intel UHD Graphics 630</li>
+                    <li><strong>Maximum Supported Memory: </strong>128 GB</li>
+                    <li><strong>ECC Support: </strong>No</li>
+                    <li><strong>Packaging: </strong>Boxed</li>
+                    <li><strong>Includes CPU Cooler: </strong>No</li>
+                    <li><strong>L1 Cache: </strong>8 x 32 kB Instruction, 8 x 32 kB Data</li>
+                    <li><strong>L2 Cache: </strong>8 x 256 kB</li>
+                    <li><strong>L3 Cache: </strong>1 x 16 MB</li>
+                    <li><strong>Lithography: </strong>14 nm</li>
+                    <li><strong>Simultaneous Multithreading: </strong>Yes: Hyper-Threading</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li>
+                        <img src="../../Images/CPUPages/i9-9900K/9900K(2).PNG" alt="MicroFinder Logo">
+
+                    </li>
+                    <li>
+                        <img src="../../Images/CPUPages/i9-9900K/9900K.PNG" alt="MicroFinder Logo">
+                    </li>
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- With 3.6GHz processor speed which gives you efficient use of the processor, high processing throughput and improved performance.</li>
+                    <li class = "please">- Provides fast access to heavily used data and instructions.</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/Intel-i9-9900K-Desktop-Processor-Unlocked/dp/B005404P9I"><img src="../../Images/logo/amazon.png" alt="Amazon 3090"></a>
+                    </li>
+                    <li>
+                        <a href = "https://www.bestbuy.com/site/intel-core-i9-9900k-9th-generation-8-core-16-thread-3-6-ghz-5-0-ghz-turbo-socket-lga-1151-unlocked-desktop-processor/6302019.p?skuId=6302019"><img src="../../Images/logo/best_buy.png" alt="Best Buy 3090"></a>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/core-i9-9th-gen-intel-core-i9-9900kf/p/N82E16819117992?item=9SIA12KB4C8965&source=region&nm_mc=knc-googlemkp-pc&cm_mmc=knc-googlemkp-pc-_-pla-3c+expert-_-processors+-+desktops-_-9SIA12KB4C8965&gclid=Cj0KCQjw-LOEBhDCARIsABrC0Tkui3TjFgH7qcLaj4imMdMJPuGeStzkSv8kDHpmJ4kMbx3GFvbPmzUaAvLdEALw_wcB&gclsrc=aw.ds"><img src="../../Images/logo/newegg.png" alt="Newegg 3090"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>After searching for a while benchmarks and YouTube videos, I went from i5 9600k to i9 9900k . Just running stock clocks .. amazing . Some games used to give me some kind of throttle but with this beast . Everything is a breeze. I know some people is going to be , oh way you didn’t go with AMD . I know the new gen from Rayzen are amazing , but is way to expensive to do that jump . I just stick with the big guns from intel , for a couple years . - User from Best Buy</li>
+                    <li>doesn’t even need over clocking but honestly i wanted this CPU for when i needed to ramp a piece of tech up to blistering 5.0 gHz. AMD doesn’t really do it for me. - User from Best Buy</li>
+                    <li>Intel - Core i9-9900K I have to say its Fast and runs cold in my system. I would buy again. - User from Best Buy</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

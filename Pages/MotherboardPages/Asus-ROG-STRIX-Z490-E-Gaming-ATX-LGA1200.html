@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">Asus-ROG-STRIX-Z490-E-Gaming-ATX-LGA1200</h1>
+            <p>The ASUS ROG Strix Z490-E  (WiFi 6) Gaming motherboard is designed to cope with the demands of 10th Generation Intel® Core™ processors, with boosted power delivery and an optimized cooling design providing more surface area for heat dissipation. ROG Strix Z490-E Gaming features AI enhancements and intuitive dashboards to help you overclock and tweak various parameters easily.</p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/MotherboardPages/Asus-ROG-STRIX-Z490-E-GAMING-ATX-LGA1200/motherboard.PNG" alt = "Asus-ROG-STRIX-Z490-E-Gaming-ATX-LGA1200">
+                        <figcaption><strong>$299.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddMotherboard(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>Asus</li>
+                    <li><strong>Socket / CPU: </strong>LGA1200</li>
+                    <li><strong>Form Factor: </strong>ATX</li>
+                    <li><strong>Chipset: </strong>Intel Z490</li>
+                    <li><strong>Memory Max: </strong>128 GB</li>
+                    <li><strong>Memory Type: </strong>DDR4</li>
+                    <li><strong>Memory Slots: </strong>4</li>
+                    <li><strong>Memory Speed: </strong>DDR4-2133
+                        , DDR4-2400
+                        , DDR4-2666
+                        , DDR4-2800
+                        , DDR4-2933
+                        , DDR4-3000
+                        , DDR4-3200
+                        , DDR4-3333
+                        , DDR4-3466
+                        , DDR4-3600
+                        , DDR4-3733
+                        , DDR4-3866
+                        , DDR4-4000
+                        , DDR4-4133
+                        , DDR4-4266
+                        , DDR4-4400
+                        , DDR4-4500
+                        , DDR4-4600</li>
+                    <li><strong>Color: </strong>Black</li>
+                    <li><strong>SLI/CrossFire: </strong>CrossFire Capable, 2-Way SLI Capable</li>
+                    <li><strong>PCI-E x16 Slots: </strong>3</li>
+                    <li><strong>PCI-E x8 Slots: </strong>0</li>
+                    <li><strong>PCI-E x4 Slots: </strong>0</li>
+                    <li><strong>PCI-E x1 Slots: </strong>3</li>
+                    <li><strong>PCI Slots: </strong>0</li>
+                    <li><strong>M.2 Slots: </strong>2242/2260/2280 M-key, 2242/2260/2280 M-key</li>
+                    <li><strong>mSATA Slots: </strong>0</li>
+                    <li><strong>Onboard Ethernet: </strong>1 x 2.5 Gbit/s</li>
+                    <li><strong>SATA 6 Gb/s: </strong>6</li>
+                    <li><strong>Onboard Video: </strong>Depends on CPU</li>
+                    <li><strong>USB 2.0 Headers: </strong>2</li>
+                    <li><strong>USB 3.2 Gen 1 Headers: </strong>1</li>
+                    <li><strong>USB 3.2 Gen 2 Headers: </strong>1</li>
+                    <li><strong>USB 3.2 Gen 2x2 Headers: </strong>0</li>
+                    <li><strong>Supports ECC: </strong>No</li>
+                    <li><strong>Wireless Networking: </strong>Wi-Fi 6</li>
+                    <li><strong>RAID Support: </strong>No</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- Intel LGA 1200 socket: Designed to unleash the maximum performance of 10th Gen Intel Core processors.</li>
+                    <li class = "please">- Robust Power Solution: 14+2 power stages with ProCool II power connector, high-quality alloy chokes and durable capacitors to provide reliable power even when push the CPU performance to the limit.</li>
+                    <li class = "please">- Optimized Thermal Design: Except comprehensive heatsink, heatpipe and fan headers, features low-noise AI cooling to balance thermals and acoustics by reducing fan speeds and maintaining a 5 Celsius delta.</li>
+                    <li class = "please">- High-performance Gaming Networking: On-board Intel WiFi 6 AX201 (802. 11 ax) and Intel 2. 5 Gb Ethernet with ASUS LANGuard.</li>
+                    <li class = "please">- Best Gaming Connectivity: Supports HDMI 1. 4 and DisplayPort 1. 4 output, and featuring dual M. 2 , front panel USB 3. 2 Gen 2 Type-C connector.</li>
+                    <li class = "please">- Industry-leading Gaming Audio: High fidelity audio with the SupremeFX S1220A codec, DTS Sound Unbound and Sonic Studio III draws you deeper into the game action.</li>
+                    <li class = "please">- Unmatched Personalization: ASUS-exclusive Aura Sync RGB lighting, including RGB headers and Gen 2 addressable headers.</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/dp/B086QSH67R?tag=pcpapi-20&linkCode=ogi&th=1&psc=1"><img src="../../Images/logo/amazon.png" alt="Amazon Asus-ROG-STRIX-Z490-E-Gaming-ATX-LGA1200"></a>
+                    </li>
+                    <li>
+                        <a href = "https://www.bestbuy.com/site/asus-rog-strix-z490-e-gaming-socket-1200-usb-3-2-intel-motherboard-black/6416651.p?acampID=0&cmp=RMX&irclickid=W1-TBvWPNxyLWiAxU-SAVSQkUkBxDFz2ARUo2Q0&irgwc=1&loc=PCPartPicker&mpid=79301&ref=198&refdomain=pcpartpicker.com&skuId=6416651"><img src="../../Images/logo/best_buy.png" alt="Best Buy Asus-ROG-STRIX-Z490-E-Gaming-ATX-LGA1200"></a>                 
+                    <li>     
+                        <a href = "https://www.newegg.com/asus-rog-strix-z490-e-gaming/p/N82E16813119268?Item=N82E16813119268&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ASID=https%3a%2f%2fpcpartpicker.com%2f&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-1SeZ15aBAD0gLSQNY4yAfw"><img src="../../Images/logo/newegg.png" alt="Newegg Asus-ROG-STRIX-Z490-E-Gaming-ATX-LGA1200"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>Would recommend this motherboard if you want good connectivity and overclocking performance. - User from Newegg</li>
+                    <li>A little pricey, but if you have a higher-end CPU and want to overclock, this is a great motherboard for it. You can tell it's focused on OCing and cooling and does both of those things extremely well, along with being a very fully-featured motherboard in general. Hopefully the RMA works out. - User from Newegg</li>
+                    <li>I've always liked asus, but this is the best board of theirs I've had. Love the bios and the features. I use the bluetooth plenty and it works great, which is a nice change from usb dongles I've been using in the past. I would definitely recommend this motherboard. - User from Newegg</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

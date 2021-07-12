@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">RTX 2070</h1>
+            <p>The powerful new GeForce RTX™ 2070 takes advantage of the cutting-edge NVIDIA Turing™ architecture to immerse you in incredible realism and performance in the latest games. The future of gaming starts here. </p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/gpu_images/3090.jpg" alt = "RTX 3090">
+                        <figcaption><strong>$599.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddGPU(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>NVIDIA</li>
+                    <li><strong>Chipset: </strong>GeForce RTX 2070</li>
+                    <li><strong>Memory: </strong>8 GB</li>
+                    <li><strong>Memory Type: </strong>GDDR6</li>
+                    <li><strong>Core Clock: </strong>1410 MHz</li>
+                    <li><strong>Boost Clock: </strong>1710 MHz</li>
+                    <li><strong>Effective Memory Clock: </strong>14000 MHz</li>
+                    <li><strong>Interface: </strong>PCIe x16</li>
+                    <li><strong>Color: </strong>Black / Silver</li>
+                    <li><strong>Frame Sync: </strong>G-Sync</li>
+                    <li><strong>Length: </strong>228.6 mm</li>
+                    <li><strong>TDP: </strong>185 W</li>
+                    <li><strong>DVI Ports: </strong>1</li>
+                    <li><strong>HDMI Ports: </strong>1</li>
+                    <li><strong>Mini-HDMI Ports: </strong>0</li>
+                    <li><strong>DisplayPort Parts: </strong>2</li>
+                    <li><strong>Expansion Slot Width: </strong>2 Fans</li>
+                    <li><strong>External Power: </strong>1 PCIe 8-pin</li>
+                    <li><strong>Display Port: </strong>2</li>
+                    <li><strong>HDMI: </strong>1</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li>
+                        <img src="../../Images/gpu_images/2070/2070(1).PNG" alt="MicroFinder Logo">
+
+                    </li>
+                    <li>
+                        <img src="../../Images/gpu_images/2070/2070.PNG" alt="MicroFinder Logo">
+                    </li>
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- Dedicated ray tracing hardware enables fast real-time ray tracing with physically accurate shadows, reflections, refractions, and global illumination.</li>
+                    <li class = "please">- Artificial intelligence is driving the greatest technology advancement in history, and Turing is bringing it to computer graphics. Experience AI-processing horsepower that accelerates gaming performance with NVIDIA DLSS 2.0.</li>
+                    <li class = "please">- Variable Rate Shading focuses processing power on areas of rich detail, boosting overall performance without affecting perceived image quality. Mesh Shaders advanced geometry processing supports an order of magnitude more objects per-scene, allowing the creation of rich complex worlds.</li>
+                    <li class = "please">- Simultaneous floating point and integer processing enables Turing GPUs to more efficiently process the compute heavy workloads of modern games.</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/rtx-2070/s?k=rtx+2070"><img src="../../Images/logo/amazon.png" alt="Amazon 2070"></a>
+                    </li>
+                    <li>
+                        <a href = "https://www.bestbuy.com/site/nvidia-geforce-rtx-2070-founders-edition-8gb-gddr6-pci-express-3-1-graphics-card/6291650.p?skuId=6291650"><img src="../../Images/logo/best_buy.png" alt="Best Buy 2070"></a>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/p/pl?d=rtx+2070"><img src="../../Images/logo/newegg.png" alt="Newegg 2070"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>Fits well in XPS Desktop 8930. It does get warm, so needed to add a fan which was simple. Also, required a power supply swap to accommodate the required power. Overall for the size it out performs GTX1080, and I can successfully run AutoCAD to Anthem on ultra settings while still getting 60fps. Anything beyond the RTX 2070 and you'd need a full fledged gaming rig. RTX does well for business and pleasure. - User from Best Buy</li>
+                    <li>Good FPS for gaming and streaming you need more than 8gb of ram and over a 650w power supply for the best results. Its worth it if you just like raw power then a more affordable GPU for the price. - User from Best Buy</li>
+                    <li>I absolutely love this card, I definitely won’t be worried about upgrading for years to come that’s for sure! I highly recommend this card, but if your a temperature freak, go with the EVGA or PNY brand!! - User from Best Buy</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

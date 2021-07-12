@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">Barracuda-2TB HDD</h1>
+            <p>We understand your unique data storage challenges, and crafted BarraCuda Pro 14TB 3.5-inch desktop hard drives to help you achieve your goals. Built on proven reliability and innovation, BarraCuda hard drives are available in a versatile mix of capacity and price point options to fit any budget.</p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/HDDPages/Barracuda-2TB/Seagate-Barracuda-2016_.jpg" alt = "Barracuda-2TB HDD">
+                        <figcaption><strong>$55.49</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddStorage(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>Seagate</li>
+                    <li><strong>Capacity: </strong>2 TB</li>
+                    <li><strong>Price / GB: </strong>$0.028</li>
+                    <li><strong>Type: </strong>7200RPM</li>
+                    <li><strong>Cache: </strong>256 MB</li>
+                    <li><strong>Form Factor: </strong>3.5"</li>
+                    <li><strong>Interface: </strong>SATA 6 Gb/s</li>
+                    <li><strong>NVME: </strong>No</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li>
+                        <img src="../../Images/HDDPages/Barracuda-2TB/2TB(2).PNG" alt="MicroFinder Logo">
+
+                    </li>
+                    <li>
+                        <img src="../../Images/HDDPages/Barracuda-2TB/2TB.PNG" alt="MicroFinder Logo">
+                    </li>
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- Versatile HDDs for all your PC needs bring you industry-leading excellence in personal computing.</li>
+                    <li class = "please">- Capacities up to 8TB for desktop.</li>
+                    <li class = "please">- Advanced Power modes help save energy without sacrificing performance.</li>
+                    <li class = "please">- SATA 6Gb/s interface optimizes burst performance; 256MB Cache.</li>
+                    <li class = "please">- 7200 RPM.</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/dp/B075WWN4QJ?tag=pcpapi-20&linkCode=ogi&th=1&psc=1"><img src="../../Images/logo/amazon.png" alt="Amazon Barracuda-2TB HDD"></a>
+                    </li>
+                    <li>
+                        <a href = "https://www.bestbuy.com/site/seagate-barracuda-2tb-internal-sata-hard-drive-for-desktops/6344172.p?skuId=6344172"><img src="../../Images/logo/best_buy.png" alt="Best Buy Barracuda-2TB HDD"></a>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/seagate-barracuda-st2000dm008-2tb/p/N82E16822184773?Item=N82E16822184773&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ASID=https%3a%2f%2fpcpartpicker.com%2f&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-abLEKnf8cQNpBXmuonaSaQ"><img src="../../Images/logo/newegg.png" alt="Newegg Barracuda-2TB HDD"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>Overall this drive performed very well for a mechanical hard drive while running relatively cool. It’s good to see that mechanical drives are still improving and finally getting close to the SATA II (3 Gbps) barrier. Considering its low price, this is a great choice if you need a drive with more space than then your SSD. *All tests were conducted three times to ensure accuracy and repeatability of results. - User from Newegg</li>
+                    <li>I've had this drive for a few weeks and thus far it's been rock solid. This additional drive compliments the four drives I already have in my FreeNAS deployment. When this disk came in I added another and then dropped that pair in as an additional Mirror pair in my existing mirror stripe for a six disk "Raid10" in other NAS devices. With a total of 8TB of useable space this NAS provides a data dump of storage for my home lab environment. These disks are quiet and do not chew up a large amount of power. They also do not generate a shed load of heat either. Overall a solid purchase. Seagate has cleaned up their act and I won't hesitate to purchase more when the time comes. - User from Newegg</li>
+                    <li>Overall it's a good drive for what it is but at this point the size is somewhat pointless. 500gb while might be nice to have i don't see why the average consumer would be buying it. I would rather have a 64/128gb ssd over a 500gb mechanical drive and the prices are still very similar. - User from Newegg</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

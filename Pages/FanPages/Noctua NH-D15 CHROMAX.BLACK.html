@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">Corsair iCUE H150i ELITE CAPELLIX</h1>
+            <p>The NH-D15S chromax.black is an all-black version of Noctua’s award-winning NH-D15S premium-quality quiet CPU cooler. Thanks to the same asymmetrical dual-tower heatsink design and single NF-A15 PWM fan, it stays true to the NH-D15S’s successful formula of fusing dual-tower performance with excellent RAM, case and PCIe compatibility. At the same time, the chromax.black version with its black fan and black coated heatsink combines these assets with a sleek stealth look. Topped off with the renowned SecuFirm2™ multi-socket mounting system, Noctua’s enthusiast-grade NT-H1 thermal compound and a full 6-year manufacturer’s warranty, the NH-D15S chromax.black is a premium choice for customers who seek a highly compatible dual-tower heatsink that looks just as great as it cools.</p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/FanPages/Noctua NH-D15 CHROMAX.BLACK/51kgqhkUNuL.jpg" alt = "Corsair iCUE H150i ELITE CAPELLIX">
+                        <figcaption><strong>$189.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddFan(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>Noctua</li>
+                    <li><strong>Fan RPM: </strong>300 - 1500 RPM</li>
+                    <li><strong>Noise Level: </strong>19.2 - 24.6 dB</li>
+                    <li><strong>Color: </strong>Black</li>
+                    <li><strong>Height: </strong>165 mm</li>
+                    <li><strong>CPU Socket: </strong>AM2
+                        , AM2+
+                        , AM3
+                        , AM3+
+                        , AM4
+                        , FM1
+                        , FM2
+                        , FM2+
+                        , LGA1150
+                        , LGA1151
+                        , LGA1155
+                        , LGA1156
+                        , LGA1200
+                        , LGA2011
+                        , LGA2011-3
+                        , LGA2066</li>
+                    <li><strong>Water Cooled: </strong>No</li>
+                    <li><strong>Fanless: </strong>No</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- Proven premium heatsink (more than 300 awards and recommendations from international hardware websites), now available in an all-black design that goes great with many colour schemes and RGB LEDs.</li>
+                    <li class = "please">- Extra-wide 140mm dual-tower design with 6 heatpipes and dual fans provides maximum quiet cooling efficiency on a par with many all-in-one watercoolers, ideal for overclockers and silent-enthusiasts!</li>
+                    <li class = "please">- Dual-fan design with renowned, award-winning NF-A15 140mm fans with Low-Noise Adaptors and PWM for automatic speed control: Full cooling performance under load, whisper quiet at idle!.</li>
+                    <li class = "please">- Includes high-end NT-H1 thermal paste and SecuFirm2 mounting system for easy installation on Intel LGA1150, LGA1151, LGA1155, LGA1156, LGA1200, LGA2011, LGA2066 and AMD AM4, AM3(+), AM2(+), FM2(+).</li>
+                    <li class = "please">- Renowned Noctua quality backed up by 6-year manufacturer’s warranty, deluxe choice for Intel Core i9, i7, i5, i3 (e.g. 11900K, 11700K, 10900K, 10980XE) and AMD Ryzen (e.g. 5950X, 5900X, 5800X, 5600X).</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/dp/B07Y87YHRH?tag=pcpapi-20&linkCode=ogi&th=1&psc=1"><img src="../../Images/logo/amazon.png" alt="Amazon Noctua NH-D15 CHROMAX.BLACK"></a>
+                    </li>
+                    <li>
+                        <img src="../../Images/logo/best_buy.png" alt="Best Buy Noctua NH-D15 CHROMAX.BLACK">
+                        <figcaption><strong>Not Available</strong></figcaption>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/noctua-nh-d15-chromax-black/p/13C-0005-001H5"><img src="../../Images/logo/newegg.png" alt="Newegg Noctua NH-D15 CHROMAX.BLACK"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>Put on my brand new build with Ryzen 9 3900X, and works like a charm. I set a manual fan curve in BIOS that puts fans to 100% PWM at 70C. Running Cinebench maxed out at 76C with an initial peak at 78C during fan ramp up, but averaged the entire benchmark at 75C. If you are wondering why you have high temps at idle despite this cooler, make sure you update your chipset driver. I'm idling 38-43C in ambient temps of 73F/23C. Pricey, but worth every penny. - User from Newegg</li>
+                    <li>Love the cooler and the fans and i have never had issues with either Noctua or newegg so i'll toss this to a mishap and hopefully this doesn't become a habit. - User from Newegg</li>
+                    <li>Recommend over any air cooler, and most AIO coolers. No worries on pump failures and no loss in performance. I have used an AIO cooler for the last 9 years. An all black DH-15 was a dream come true. - User from Newegg</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">SeaSonic-S12III-650W</h1>
+            <p>The S12III Bronze Series is available in the standard ATX Form Factor and in wattages that are most common for a PC system. The Seasonic S12III-Series achieves 80 PLUS® Bronze standard of providing at least 82 %, 85 % and 82 % power usage efficiency at 20 %, 50 % and 100 % operating loads, respectively. This efficiency, combined with Active Power Factor Correction, enables the S12III Bronze series power supplies to lessen energy waste, which translates into savings on the costs of energy costs for its users. In addition to being greatly efficient, the S12III units utilize the LLC resonant converter design, and the industry’s leading Smart and Silent Fan Control (S2FC).</p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/PowerSupplyPages/SeaSonic-S12III-650W/power.PNG" alt = "SeaSonic-S12III-650W">
+                        <figcaption><strong>$64.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddBattery(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>SeaSonic</li>
+                    <li><strong>Part: </strong>SSR-650GB3, SS-650GB, S12III-650</li>
+                    <li><strong>Form Factor: </strong>ATX</li>
+                    <li><strong>Efficency Rating: </strong>80+ Bronze</li>
+                    <li><strong>Wattage: </strong>650 W</li>
+                    <li><strong>Length: </strong>140 mm</li>
+                    <li><strong>Modular: </strong>No</li>
+                    <li><strong>Color: </strong>Black</li>
+                    <li><strong>Type: </strong>ATX</li>
+                    <li><strong>Fanless: </strong>No</li>
+                    <li><strong>EPS Connectors: </strong>1</li>
+                    <li><strong>PCIe 6+2-Pin Connectors: </strong>4</li>
+                    <li><strong>SATA Connectors: </strong>6</li>
+                    <li><strong>Molex 4-Pin Connectors: </strong>3</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- Fixed cabling - Provides all the necessary cables required for a standard pc..</li>
+                    <li class = "please">- 80 plus Bronze - 82% efficient at 20% load, 85% efficient at 50% load, and 82% efficient at 100% load.</li>
+                    <li class = "please">- 120 mm SLEEVE BEARING FAN; The 120 mm fan inside is regulated by the Sea sonic S2FC fan control, which optimizes the fan speed according to the needs of the system to create a quiet and pleasant environment.</li>
+                    <li class = "please">- 5 year warranty ; Our commitment to superior quality.</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/dp/B07MWHRG99?tag=pcpapi-20&linkCode=ogi&th=1&psc=1"><img src="../../Images/logo/amazon.png" alt="Amazon SeaSonic-S12III-650W"></a>
+                    </li>
+                    <li>
+                        <a href = "https://www.bestbuy.com/site/seasonic-ssr-650gb3-650w-80-bronze-psu-atx12v-eps12v-direct-output-smart-silent-fan-control-5-yr-warranty-black/6414267.p?acampID=0&cmp=RMX&irclickid=W1-TBvWPNxyLWiAxU-SAVSQkUkBxBaSmI3RTV00&irgwc=1&loc=PCPartPicker&mpid=79301&ref=198&refdomain=pcpartpicker.com&skuId=6414267"><img src="../../Images/logo/best_buy.png" alt="Best Buy SeaSonic-S12III-650W"></a>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/seasonic-s12iii-bronze-series-ssr-650gb3-650w/p/N82E16817151228?Item=N82E16817151228&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ASID=https%3a%2f%2fpcpartpicker.com%2f&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-WqvQRbH3egg93k5fSIoaSw"><img src="../../Images/logo/newegg.png" alt="Newegg SeaSonic-S12III-650W"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>After 12 years I finally broke down with a little help from the U.S. government and built myself a new PC. My goal was to use the best possible components that my wallet could afford and then the pandemic hit. Prices skyrocketed and availability of PC components was hit hard. I wanted a gold rated power supply and there was just no way I was going to pay sometimes upwards of $500 for one and I didn't want one from a company that I didn't recognize. My power supply in my old PC was a Seasonic 500 watt one and it never let me down. It still works to this day. I took the plunge and got this 650 watt one not knowing that I would later win the video card lottery and luck out and obtain a RTX 3080 graphics card. They recommend 750 watts for it so I was a little bit worried but after watching several reviews many were saying that 650 watts was fine. I waited and waited and waited and when the video card finally arrived I installed it and since then I've gamed for hundreds of hours without a single issue. Once again Seasonic hasn't let me down. Of course it's only been a little over 6 months that I have had it so time will tell but if it's anything like my other Seasonic power supply I should have no issues with it and it should last for a long time. - User from Amazon</li>
+                    <li>I got this PSU for my current build of Ryzen 5 3600 w/ RX 5700 XT. It does the job great and I like that it doesn't have ketchup and mustard cables. Yes, the S12iii 650w is not modular, but cable management was not an issue in my case anyway. Get this if you're looking for a PSU that's 60 bucks or less. - User from Amazon</li>
+                    <li>Price was good for a reputable brand. Fixed my issue and was standard to install. No complaints after about a week of use. - User from Amazon</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

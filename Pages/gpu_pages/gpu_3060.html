@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">RTX 3060 Ti</h1>
+            <p>The GeForce RTX™ 3060 Ti and RTX 3060 lets you take on the latest games using the power of Ampere—NVIDIA’s 2nd generation RTX architecture. Get incredible performance with enhanced Ray Tracing Cores and Tensor Cores, new streaming multiprocessors, and high-speed G6 memory.</p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/gpu_images/3060.jpg" alt = "RTX 3060 Ti">
+                        <figcaption><strong>$399.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddGPU(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>NVIDIA</li>
+                    <li><strong>Chipset: </strong>GeForce RTX 3060 Ti</li>
+                    <li><strong>Memory: </strong>8 GB</li>
+                    <li><strong>Memory Type: </strong>GDDR6</li>
+                    <li><strong>Core Clock: </strong>1410 MHz</li>
+                    <li><strong>Boost Clock: </strong>1670 MHz</li>
+                    <li><strong>Effective Memory Clock: </strong>14000 MHz</li>
+                    <li><strong>Interface: </strong>PCIe x16</li>
+                    <li><strong>Color: </strong>Black / Silver</li>
+                    <li><strong>Frame Sync: </strong>G-Sync</li>
+                    <li><strong>Length: </strong>242 mm</li>
+                    <li><strong>TDP: </strong>200 W</li>
+                    <li><strong>DVI Ports: </strong>0</li>
+                    <li><strong>HDMI Ports: </strong>1</li>
+                    <li><strong>Mini-HDMI Ports: </strong>0</li>
+                    <li><strong>DisplayPort Parts: </strong>3</li>
+                    <li><strong>Expansion Slot: </strong>2 Fans</li>
+                    <li><strong>External Power: </strong>1 PCIe 12-pin</li>
+                    <li><strong>Display Port: </strong>3</li>
+                    <li><strong>HDMI: </strong>1</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li>
+                        <img src="../../Images/gpu_images/3060Stat/3060(2).PNG" alt="MicroFinder Logo">
+
+                    </li>
+                    <li>
+                        <img src="../../Images/gpu_images/3060Stat/3060.PNG" alt="MicroFinder Logo">
+                    </li>
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- Powered by the NVIDIA GeForce RTX 3060 Ti graphics processing unit (GPU) With a 1665 MHz boost clock speed to help meet the needs of demanding games.</li>
+                    <li class = "please">- 8GB GDDR6 (256-bit)</li>
+                    <li class = "please">- PCI Express 4.0 and earlier PCI Express 3.0. Offers compatibility with a range of systems.</li>
+                    <li class = "please">- Antialiasing and anisotropic filtering delivers striking graphics with incredible realism.</li>
+                    <li class = "please">- 2nd Gen Ray Tracing Cores, 3rd Gen Tensor Cores, PCI Express Gen 4, Microsoft DirectX 12 Ultimate, NVIDIA DLSS, NVIDIA GeForce Experience, NVIDIA G-SYNC Ready, NVIDIA GPU Boost, Vulkan RT API, 7th Gen NVIDIA Encoder, 5th Gen NVIDIA Decoder AV1, HDCP 2.2, VR Ready</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/s?k=rtx+3060+ti&ref=nb_sb_noss_1"><img src="../../Images/logo/amazon.png" alt="Amazon 3060 Ti"></a>
+                    </li>
+                    <li>
+                        <a href = "https://www.bestbuy.com/site/searchpage.jsp?st=3060+ti&_dyncharset=UTF-8&_dynSessConf=&id=pcat17071&type=page&sc=Global&cp=1&nrp=&sp=&qp=&list=n&af=true&iht=y&usc=All+Categories&ks=960&keys=keys"><img src="../../Images/logo/best_buy.png" alt="Best Buy 3060 Ti"></a>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/p/pl?N=100007709%20601361654"><img src="../../Images/logo/newegg.png" alt="Newegg 3060 Ti"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>I didn't even know that they were still selling these FE cards at MSRP with all of the stock problems and tariffs raising prices, but Best Buy came through. I learned about a drop of cards on the 9th from a discord with drop notifications, and with the 2FA and app I actually got a card. The build quality is amazing on this card and it runs Cyberpunk at 1080p any settings with ease. - User from Best Buy</li>
+                    <li>Fantastic graphics card (upgrade from rx 580), stable drivers, cool temps (does not exceed 65-70c at most times), and plays most games above 60fps (or 100+fps depending on your CPU) @1080p. Only downfall is the ugly 12-pin connector which is supplied with the Founder Edition cards I recommend to get a custom cable to fix that adapter. - User from Best Buy</li>
+                    <li>The NVIDIA GeForce RTX 3060 Ti is a beautiful looking card with an outstanding price to performance ratio. I Haven't had a single issue playing my favorite games on ultra settings or with ray tracing enabled. If you gave a budget of ~1.5k, this is the perfect GPU for you. - User from Best Buy</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">Corsair-CV-450W</h1>
+            <p>CORSAIR CV power supplies are ideal for powering your new home or office PC, with 80 PLUS Bronze efficiency guaranteed to continuously deliver full wattage to your system.</p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/PowerSupplyPages/Corsair-CV-450W/power.PNG" alt = "Corsair-CV-450W">
+                        <figcaption><strong>$54.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddBattery(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>Corsair</li>
+                    <li><strong>Part: </strong>CP-9020209-NA, CP-9020209-AU, CP-9020209-EU, CP-9020209-UK</li>
+                    <li><strong>Form Factor: </strong>ATX</li>
+                    <li><strong>Efficency Rating: </strong>80+ Bronze</li>
+                    <li><strong>Wattage: </strong>450 W</li>
+                    <li><strong>Length: </strong>125 mm</li>
+                    <li><strong>Modular: </strong>No</li>
+                    <li><strong>Color: </strong>Black</li>
+                    <li><strong>Type: </strong>ATX</li>
+                    <li><strong>Fanless: </strong>No</li>
+                    <li><strong>EPS Connectors: </strong>1</li>
+                    <li><strong>PCIe 6+2-Pin Connectors: </strong>2</li>
+                    <li><strong>SATA Connectors: </strong>7</li>
+                    <li><strong>Molex 4-Pin Connectors: </strong>3</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- 80+ Bronze certified efficiency provides up to 88% operational efficiency generating less heat and lowering your energy costs.</li>
+                    <li class = "please">- CORSAIR CV Series power supplies are to deliver their full rated wattage of continuous power.</li>
+                    <li class = "please">- A 120mm thermally controlled low-noise cooling fan only spins at high speed when your power supply is under heavy stress slowing down for quieter operation at lower loads.</li>
+                    <li class = "please">- Compact 125mm-long casing ensures an easy fit in almost all modern PC cases.</li>
+                    <li class = "please">- Black sleeved cables and a black powder-coated casing seamlessly fits your PC’s style.</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/dp/B0838YLZ1H?tag=pcpapi-20&linkCode=ogi&th=1&psc=1"><img src="../../Images/logo/amazon.png" alt="Amazon Corsair-CV-450W"></a>
+                    </li>
+                    <li>
+                       <img src="../../Images/logo/best_buy.png" alt="Best Buy Corsair-CV-450W">
+                       <figcaption><strong>Not Available</strong></figcaption>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/corsair-cv-series-cv450-cp-9020209-na-450w/p/N82E16817139251?Item=N82E16817139251&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ASID=https%3a%2f%2fpcpartpicker.com%2f&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-DQu_fCqvybun4rmVBhXrkw"><img src="../../Images/logo/newegg.png" alt="Newegg Corsair-CV-450W"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>I built my son a computer, with an eye towards noise abatement. I picked this power supply because it said something about PWM fan that is on demand and quieter. Worked great until a few days later that fan got kicked up to high and then it started making a clicking noise. I opened the computer, checked all my wires and fans, but it was the fan inside this power supply. Must've got a bad one. No worries, ordered a direct replacement. Amazon and seller quickly supplied me with #2. 2 days later, high speed loud and obvious clicking that sent my son back to get me again. At this point, I spent a little more for av EVGA 650W unit, which I just finished installing, the third time I have installed and wired this computer's power supply. I can't believe that this company would consider the noises these units make at high speed normal, so it must be their quality control. Either way, unless you are prepared to live with the racket or re-wire your computer 3x, I would pass on this power supply. - User from Amazon</li>
+                    <li>I performed a power supply test on the power supply, and it took a few tries to get it to work. It turns out that you really need to push the power cord connector as hard as you can into the power supply. The metal contact is about 70% in the socket, so if you only plug it in normally, there is no metal-metal contact. The connectors are a little painful to plug into the motherboard. You also have to jam them in very hard since some of the contacts for the plugs are not at the same position. The power cable for SATA should also have the connectors pointing at different sides so that it does not need to be extremely and roughly twisted just to get them into the SATA devices. It took a while for me to figure out why I was not getting any power to the motherboard, but eventually after examining every component of the power supply, I figured out that I wasn't jamming the cables hard enough to get some contact. - User from Amazon</li>
+                    <li>Works well! Reliable, continuous power delivery. Using it in Phanteks - ECLIPSE P400 TEMPERED GLASS ATX Mid Tower Case. Parts are Ryzen 5 1600 , msi rx 580 4 gb armor oc, 5 upHere rgb fans with hub and controller, led rgb strip, cooler master hyper 212x, 7200rpm wd hard drive, adata ssd, gaming mouse, keyboard, elgato external capture card, cannon printer, Asus 27 inch monitor, gigabyte ga-ax370m-ds3h motherboard. Great for gaming, streaming, video editing, everyday needs! Room for overclocking my system now that I upgraded from 450w originally in the system. - User from Amazon</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

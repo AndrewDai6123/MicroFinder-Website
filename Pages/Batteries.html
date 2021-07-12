@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" >
+                            <label class="toggle">
+                                <span class="onoff">Hide Definitions</span>
+                                <input type="checkbox" id="toggle" onclick="ShowHide(this)"/>
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <script type="text/javascript">
+            function ShowHide(toggle) {
+                var info = document.getElementById("info");
+                info.style.display = toggle.checked ? "none" : "block";
+            }
+        </script>
+
+        <section>
+            <h1>Power Supply</h1>
+            <p id="info">The PSU drives electric power to run your system. Every PC component utilizes a certain
+                amount of wattage and buying a powerful enough PSU will ensure your system’s stability and
+                longevity.Every PSU has a wattage rating in its name, such as 500W or 750W – this determines
+                how much power it can draw from your wall sockets to your components. Generally, more
+                expensive and high-end components will require more power</p>
+        </section>
+
+        <section class = "search-container">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for computer parts here..." title="Type in a name">
+            <button type="submit"><i class="fa fa-search"></i>Search</button>
+        </section>
+
+        <section class = "shop_page">
+            <ul id = "myUL">
+                <li>  
+                    <img src="../Images/PowerSupplyPages/Corsair-AXi-1600W/1d57cf53a1289e4dfff1aed9b1cc272a.256p.jpg" alt ="Corsair-AXi-1600W">
+                    <figcaption><a href = "BatteryPages/Corsair-AXi-1600W.html"><strong>Corsair-AXi-1600W</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/PowerSupplyPages/Corsair-CV-450W/power.PNG" alt="Corsair-CV-450W">
+                    <figcaption><a href = "BatteryPages/Corsair-CV450W.html"><strong>Corsair-CV-450W</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/PowerSupplyPages/Corsair-HX-Platinum-1000W/power.PNG" alt="Corsair-HX-Platinum-1000W">
+                    <figcaption><a href = "BatteryPages/Corsair-HX-Platinum-1000W.html"><strong>Corsair-HX-Platinum-1000W</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/PowerSupplyPages/Corsair-RM-(2019)-750W/power.PNG" alt="Corsair-RM-(2019)-750W">
+                    <figcaption><a href = "BatteryPages/Corsair-RM-(2019)-750W.html"><strong>Corsair-RM-(2019)-750W</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/PowerSupplyPages/EVGA-BQ-600W/power.PNG" alt="EVGA-BQ-600W">
+                    <figcaption><a href = "BatteryPages/EVGA-BQ-600W.html"><strong>EVGA-BQ-600W</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/PowerSupplyPages/EVGA-BR-500W/power.PNG" alt="EVGA-BR-500W">
+                    <figcaption><a href = "BatteryPages/EVGA-BR-500W.html"><strong>EVGA-BR-500W</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/PowerSupplyPages/EVGA-BR-600W/power.PNG" alt="EVGA-BR-600W">
+                    <figcaption><a href = "BatteryPages/EVGA-BR-600W.html"><strong>EVGA-BR-600W</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/PowerSupplyPages/EVGA-G3-750W/power.PNG" alt="EVGA-G3-750W">
+                    <figcaption><a href = "BatteryPages/EVGAG3-750W.html"><strong>EVGA-G3-750W</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/PowerSupplyPages/SeaSonic-S12III-650W/power.PNG" alt="SeaSonic-S12III-650W">
+                    <figcaption><a href = "BatteryPages/SeaSonic-S12III-650W.html"><strong>SeaSonic-S12III-650W</strong></a></figcaption>
+                </li>
+                <li>  
+                     <img src="../Images/PowerSupplyPages/Thermaltake-Smart-500W/power.PNG" alt="Thermaltake-Smart-500W">
+                     <figcaption><a href = "BatteryPages/Thermaltake-Smart-500W.html"><strong>Thermaltake-Smart-500W</strong></a></figcaption>
+                 </li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, data, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+            </script>
+
+        
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+        
+    </body>
+
+</html>
+

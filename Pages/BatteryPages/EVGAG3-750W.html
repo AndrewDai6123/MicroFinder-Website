@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">EVGA-G3-750W</h1>
+            <p>EVGA SuperNOVA power supplies are well-known for their extreme efficiency, performance and reliability. In fact, over the last 3 years EVGA SuperNOVA power supplies have won over 70 awards from leading review sites. EVGA’s dedication to performance has forged the latest power supply platform: the EVGA SuperNOVA G3 Series. With these new power supplies, EVGA took the best features of the award-winning G2 lineup and made them even better. The SuperNOVA G3’s smaller size, improved performance and a new Hydraulic Dynamic Bearing fan give you ultra-quiet performance with an increased lifespan.</p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/PowerSupplyPages/EVGA-G3-750W/power.PNG" alt = "EVGA-G3-750W">
+                        <figcaption><strong>$159.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddBattery(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>EVGA</li>
+                    <li><strong>Model: </strong>SuperNOVA 750</li>
+                    <li><strong>Part: </strong>220-G3-0750, 220-G3-0750-X1, 220-G3-0750-X3, 220-G3-0750-X2</li>
+                    <li><strong>Form Factor: </strong>ATX</li>
+                    <li><strong>Efficency Rating: </strong>80+ Gold</li>
+                    <li><strong>Wattage: </strong>750 W</li>
+                    <li><strong>Length: </strong>150 mm</li>
+                    <li><strong>Modular: </strong>Full</li>
+                    <li><strong>Type: </strong>ATX</li>
+                    <li><strong>Fanless: </strong>No</li>
+                    <li><strong>EPS Connectors: </strong>2</li>
+                    <li><strong>PCIe 6+2-Pin Connectors: </strong>4</li>
+                    <li><strong>SATA Connectors: </strong>9</li>
+                    <li><strong>Molex 4-Pin Connectors: </strong>4</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- EVGA 750 G3: The next generation in power.</li>
+                    <li class = "please">- 100% 105°C Japanese capacitors, top-specification internal components and digital design deliver over 94% efficiency.Compatible with CORSAIR iCUE.</li>
+                    <li class = "please">- Fan size/Bearing: 130 millimeters Hydraulic Dynamic Bearing for ultra quiet performance.</li>
+                    <li class = "please">- Heavy duty protections, including OVP, UVP, OCP, OPP, and SCP.</li>
+                    <li class = "please">- 10 year warranty.</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/dp/B005BE058W?tag=pcpapi-20&linkCode=ogi&th=1&psc=1"><img src="../../Images/logo/amazon.png" alt="Amazon EVGA-G3-750W"></a>
+                    </li>
+                    <li>
+                        <a href = "https://www.bestbuy.com/site/evga-750w-atx12v-eps12v-modular-power-supply-black/5753407.p?skuId=5753407"><img src="../../Images/logo/best_buy.png" alt="Best Buy EVGA-G3-750W"></a>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/corsair-ax1600i-cp-9020087-na-1600w/p/N82E16817139226"><img src="../../Images/logo/newegg.png" alt="Newegg EVGA-G3-750W"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>In a word, Superb. Easy to install, 4 simple screws attaches it in standard mid or tower desktop case. Plenty of nice features & like many PSUs of this caliber, multiple 12V rails to bear the load. Though you come to expect that from 80Plus rated PSUs. They don't call this a SuperNOVA G3 class PSU for nothing. This PSU surprisingly powers my 165W Core i9 10920X based HEDT Computer with no problems, and apparently has some head room to spare. Basing this on load to my UPS battery backup & CPU-Z Hardware monitor. I wasn't sure it would handle it at first. In fact, I almost wished I'd gotten an 850W or more to be sure I'd be OK power wise, esp for an HEDT PC. But after seeing it in action last couple months, I have no complaints. Another plus is the fully modular cable support to keep excess cables out of your case. Also I love the 10 year warranty by EVGA (w valid receipt, 3 years without). But the best part is it is so QUIET. I cannot hear it at all! Something I discovered these G3 class PSUs have is an Eco mode switch on the back, which only powers the PSU fan if it's needed. At first, I thought why is the fan not running? Then I saw the Eco switch. Aha, of course! Eco mode was ON. Duh, No wonder it's so quiet! Lol! But even when the fan is running you still can't hear this high class well made PSU. Well done EVGA for such a superb quality product & Thank you Amazon! - User from Amazon</li>
+                    <li>I have not completed the build of the new computer this is for, but the entire package speaks of quality and attention to detail. The power supply is well padded and wrapped in it's own cloth like pouch. There is another large pouch for all the cables (and there are a LOT) The cables are not hardwired in internally. You plug in the required cable harnesses as required, this keeps the interior less cluttered when it doesn't need to be, and allows greater airflow. The Power supply is artfully constructed and not a generic 'off the rack' metal box. Everything in the packaging is well protected and is given that extra attention to detail that seems overkill for something that will be hidden in the innards of your computer case. It's a very impressive and professional looking setup. If it works as good as it looks (it has a superb sounding warranty) then users should have many years or high end worry free performance. - User from Amazon</li>
+                    <li>The amount of time I spent researching several power supplies over several weeks, this EVGA SuperNOVA 750 G3 became my choice. It is quiet. The cabling is good. At the time of my purchase, it was the best bang for the buck in a 750 watt fully modular PS and I am happy with it. The only negative thing I can say is that if you are mounting the PS in a tower computer case that is see-through, you may end up with a one or the other side of PS having a sticker/logo showing upside down. - User from Amazon</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

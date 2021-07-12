@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">Cooler Master Hyper 212 EVO</h1>
+            <p>Well-balanced cooling performance provides fin optimizations with perfect balance between high and low speed operations. 4 Direct Contact heat pipes with the patented CDC™ (Continuous Direct Contact) technology - creating a perfect, sleek surface for heat conduction. Wide-range PWM fan with unique wave-shaped blade design for excellent airflow. Versatile all-in-one mounting solution supporting the latest Intel® LGA 1366 / 1155 / 1151 / 1150 and AMD FM2 / FM1 / AM3+.</p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/FanPages/Cooler Master Hyper 212 EVO/ddea57de9797549e80d05fb3acb2e83d.med.256p.jpg" alt = "Cooler Master Hyper 212 EVO">
+                        <figcaption><strong>$39.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddFan(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>Cooler Master</li>
+                    <li><strong>Model: </strong>Hyper 212 EVO</li>
+                    <li><strong>Fan RPM: </strong>600 - 2000 RPM</li>
+                    <li><strong>Noise Level: </strong>9 - 36 dB</li>
+                    <li><strong>Height: </strong>159 mm</li>
+                    <li><strong>CPU Socket: </strong>AM2
+                        , AM2+
+                        , AM3
+                        , AM3+
+                        , AM4
+                        , FM1
+                        , FM2
+                        , FM2+
+                        , LGA1150
+                        , LGA1151
+                        , LGA1155
+                        , LGA1156
+                        , LGA1200
+                        , LGA1366
+                        , LGA2011
+                        , LGA2011-3
+                        , LGA2066
+                        , LGA775</li>
+                    <li><strong>Water Cooled: </strong>No</li>
+                    <li><strong>Fanless: </strong>No</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- Air flow: 82.9 CFM; Noise level: 36.0 decibels.</li>
+                    <li class = "please">- Fan dimensions:120 x 120 x 25 millimeter (4.7 x 4.7 x 1 inches).</li>
+                    <li class = "please">- Heat sink dimensions: 116 x 51 x 159 millimeter (4.6 x 2 x 6.2 inch).</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/dp/B005O65JXI?tag=pcpapi-20&linkCode=ogi&th=1&psc=1"><img src="../../Images/logo/amazon.png" alt="Amazon Cooler Master Hyper 212 EVO"></a>
+                    </li>
+                    <li>
+                        <a href = "https://www.bestbuy.com/site/cooler-master-hyper-212-evo-120mm-cpu-cooling-fan-black/4923764.p?skuId=4923764"><img src="../../Images/logo/best_buy.png" alt="Best Buy Cooler Master Hyper 212 EVO"></a>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/cooler-master-hyper-212-evo-rr-212e-20pk-r2/p/N82E16835103099?Item=N82E16835103099&nm_mc=AFC-RAN-COM&cm_mmc=AFC-RAN-COM&utm_medium=affiliates&utm_source=afc-PCPartPicker&AFFID=2558510&AFFNAME=PCPartPicker&ACRID=1&ASID=https%3a%2f%2fpcpartpicker.com%2f&ranMID=44583&ranEAID=2558510&ranSiteID=8BacdVP0GFs-z7XXUER6TxKy7_qUJ0Gm8w"><img src="../../Images/logo/newegg.png" alt="Newegg Cooler Master Hyper 212 EVO"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>So, I got this and started to put it on my computer... and was like "ok, what am I doing wrong?" after about 20 minutes of trying. So I look online and find a picture and realize my retention bracket is assembled incorrectly. I contact Cooler Master, they ask for a picture of my retention bracket, I send them one, and they mail me a replacement bracket the next day. They actually mailed me everything except the actual heatsink/fan with the bracket, so I got additional thermal paste, plus some extra parts. Very happy with their customer support. - User from Newegg</li>
+                    <li>If you have the patience and follow the directions, the payoff is worth it. This is a big cooling unit. Measure your case and then measure it again. I had to swap out cases because the first case was to narrow and the side cover would not close. - User from Newegg</li>
+                    <li>This is the first time i bought the EVO version of the Hyper 212. Ive been buying the Hyper 212 for years and they have always been my go to cooler. The only difference ive noticed was the fan has been changed and it does push a ton of air over the fins. This is a great cooler for the money and i don't think any others can compare at this price range in my opinion. Get this cooler if your case can fit it and you wont regret it. - User from Newegg</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">RTX 3070</h1>
+            <p>The GeForce RTX™ 3070 is powered by Ampere—NVIDIA’s 2nd gen RTX architecture. Built with enhanced Ray Tracing Cores and Tensor Cores, new streaming multiprocessors, and high-speed G6 memory, it gives you the power you need to rip through the most demanding games.</p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/gpu_images/3070.jpg" alt = "RTX 3070">
+                        <figcaption><strong>$499.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddGPU(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>NVIDIA</li>
+                    <li><strong>Chipset: </strong>GeForce RTX 3070</li>
+                    <li><strong>Memory: </strong>8 GB</li>
+                    <li><strong>Memory Type: </strong>GDDR6</li>
+                    <li><strong>Core Clock: </strong>1500 MHz</li>
+                    <li><strong>Boost Clock: </strong>1730 MHz</li>
+                    <li><strong>Effective Memory Clock: </strong>16000 MHz</li>
+                    <li><strong>Interface: </strong>PCIe x16</li>
+                    <li><strong>Color: </strong>Black</li>
+                    <li><strong>Frame Sync: </strong>G-Sync</li>
+                    <li><strong>Length: </strong>242 mm</li>
+                    <li><strong>TDP: </strong>220 W</li>
+                    <li><strong>DVI Ports: </strong>0</li>
+                    <li><strong>HDMI Ports: </strong>1</li>
+                    <li><strong>Mini-HDMI Ports: </strong>0</li>
+                    <li><strong>DisplayPort Parts: </strong>3</li>
+                    <li><strong>Expansion Slot: </strong>2 Fans</li>
+                    <li><strong>External Power: </strong>1 PCIe 12-pin</li>
+                    <li><strong>Display Port: </strong>3</li>
+                    <li><strong>HDMI: </strong>1</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li>
+                        <img src="../../Images/gpu_images/3070Stat/3070(2).PNG" alt="MicroFinder Logo">
+
+                    </li>
+                    <li>
+                        <img src="../../Images/gpu_images/3070Stat/3070.PNG" alt=MicroFinder Logo">
+                    </li>
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- Powered by the NVIDIA GeForce RTX 3070 graphics processing unit (GPU) with a 1695MHz boost clock speed to help meet the needs of demanding games.</li>
+                    <li class = "please">- 8GB GDDR6 (256-bit) Video Memory.</li>
+                    <li class = "please">- Antialiasing and anisotropic filtering delivers striking graphics with incredible realism.</li>
+                    <li class = "please">- HDMI and Display Port outputs nnable flexible connectivity.</li>
+                    <li class = "please">- PCI Express 4.0 and earlier PCI Express 3.0. Offers compatibility with a range of systems.</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/stores/GeForce/RTX3070_GEFORCERTX30SERIES/page/127E4131-DA71-49E3-902E-C382ABEC4AC3"><img src="../../Images/logo/amazon.png" alt="Amazon 3070"></a>
+                    </li>
+                    <li>
+                        <a href = "https://www.bestbuy.com/site/searchpage.jsp?st=3070&_dyncharset=UTF-8&_dynSessConf=&id=pcat17071&type=page&sc=Global&cp=1&nrp=&sp=&qp=&list=n&af=true&iht=y&usc=All+Categories&ks=960&keys=keys"><img src="../../Images/logo/best_buy.png" alt="Best Buy 3070"></a>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/p/pl?N=100007709%20601357250"><img src="../../Images/logo/newegg.png" alt="Newegg 3070"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>This GPU is fantastic. I built a desktop PC in anticipation for the new RTX 30 series cards. Specs: NZXT H210, i 10700K (overclocked), 32GB RAM, 2 x M.2 SSDs. Modern Warfare is at a constant limit of 144fps 1080p. Phasmaphobia is 240fps - 290fps 1080p. Heroes of the Storm is easily over 240fps 1080p. My system is completely air cooled with be quiet high speed pwm fans and Dark Rock slim pro. I recommend downloading EVGA Precision X1 and adjusting fan curves for case fans. If I don't adjust case fans my GPU stays around 70 - 73 Celsius. Adjusting my case fans when running at 60% speed my GPU will RARELY hit 62 Celcius in a room around 75 degrees. If you have a 1080p monitor you'll be extremely happy and run everything at max detail and max fps for your monitor unless you have the crazy 240hz or 360hz. Haven't used it for 1440p yet. This is a great buy, unless you have a 2080 ti you will go home completely happy and pleased with this item. This works well with ITX cases as long as you adjust case fan curve. - User from Best Buy</li>
+                    <li>Excellent graphic card! Awesome for gaming, it runs every videogame at ultra settings. After waiting 3 months in every best buy drop, I finally got it. Be patient, don't buy from scalpers, guys! It's not impossible to get a graphic card for a good price this year. - User from Best Buy</li>
+                    <li>When I embarked on my first PC build this December, I had no idea the state of the PC market (Covid shortages, new tariffs, crypto demand, etc).  Right now is arguably the worst time to build a PC.  I consider myself to have been one of the fortunate to get a card at MSRP thanks to BestBuy - it was not impossible, and was persistence of checking the website multiple times a day. This 3070 Founders Edition was initially not my first pick, but after having received it, it is now my favorite 3070 due to being simple and beautiful.  In my opinion, the only comsetic downside to the card is the lack of any illumination.  This card feels premium and is really rigid.  Despite the fact my case only allows for one screw to be used on the PCI slot, this card does not have any sag and is very securely mounted. Performance?  Well, the benchmarks speak for themselves.  Admittedly, I am still in the process of setting up my new PC and have not had much time with it, but I am excited to know that this GPU should withstand my needs for some time. - User from Best Buy</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

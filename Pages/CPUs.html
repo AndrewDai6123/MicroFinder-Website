@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" >
+                            <label class="toggle">
+                                <span class="onoff">Hide Definitions</span>
+                                <input type="checkbox" id="toggle" onclick="ShowHide(this)"/>
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <script type="text/javascript">
+            function ShowHide(toggle) {
+                var info = document.getElementById("info");
+                info.style.display = toggle.checked ? "none" : "block";
+            }
+        </script>
+
+        <section>
+            <h1>Processors (CPU)</h1>
+            <p id="info">The core processing unit (CPU) calculates and interprets instructions while you're
+                surfing the web, creating documents, playing games, or running software programs.
+                CPUs have 3 specifications, cores, clock speed, and threads.Cores refer to how many
+                processing units are reading and executing program instructions. Each cpu is typically
+                made up of one, two, four, six, or eight cores.Though there does exist cpu’s with more
+                cores, they are unnecessary for most people. For the professional video editor or
+                designer, having more cores will be beneficial to boosting performance and speed. If
+                you use the PC for daily office tasks such as documents, excel, or web browsing, a dual
+                core will suffice most of the time. Next is clock speed (measured in GHz), which
+                determines how quickly the cpu can retrieve and interpret instructions. This helps your
+                computer complete more tasks by getting them done faster.Finally, threads are the
+                tasks that the CPU executes. Similar to cores, multiple threads are only really beneficial
+                when running multithreaded applications, such as video editing, programming, heavy
+                multi-tasking, and 3D rendering.</p>
+        </section>
+
+        <section class = "search-container">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for computer parts here..." title="Type in a name">
+            <button type="submit"><i class="fa fa-search"></i>Search</button>
+        </section>
+
+        <section class = "shop_page">
+            <ul id = "myUL">
+                <li>  
+                    <img src="../Images/CPUPages/i5-2500K/Intel-Core-i5-2500K.jpg" alt ="Intel-Core-i5-2500K">
+                    <figcaption><a href = "cpu_pages/i5-2500K.html"><strong>Intel Core i5-2500K</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/CPUPages/i5-8600K/Intel-Core-i5-8600K.jpg" alt="Intel-Core-i5-8600K">
+                    <figcaption><a href = "cpu_pages/i5-8600k.html"><strong>Intel Core i5-8600K</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/CPUPages/i7-7700K/Intel-Core-i7-7700K.jpg" alt="Intel-Core-i7-7700K">
+                    <figcaption><a href = "cpu_pages/i7-7700k.html"><strong>Intel Core i7-7700K</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/CPUPages/i7-8700K/Intel-Core-i7-8700K.jpg" alt="Intel-Core-i7-8700K">
+                    <figcaption><a href = "cpu_pages/i7-8700k.html"><strong>Intel Core i7-8700k</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/CPUPages/i9-9900K/Intel-Core-i9-9900K.jpg" alt="Intel-Core-i9-9900K">
+                    <figcaption><a href = "cpu_pages/i9-9900k.html"><strong>Intel Core i9-9900K</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/CPUPages/Ryzen-5-3600/AMD-5-3600.jpg" alt="Ryzen-5-3600">
+                    <figcaption><a href = "cpu_pages/Ryzen-5-3600.html"><strong>Ryzen 5-3600</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/CPUPages/Ryzen-5-5600X/AMD-5-5600X.jpg" alt="Ryzen-5-5600X">
+                    <figcaption><a href = "cpu_pages/Ryzen-5-5600X.html"><strong>Ryzen 5-5600X</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/CPUPages/Ryzen-7-5800/r7.jpg" alt="Ryzen-7-5800">
+                    <figcaption><a href = "cpu_pages/Ryzen-7-5800.html"><strong>Ryzen 7-5800</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/CPUPages/Ryzen-9-5900/r9.jpg" alt="Ryzen-9-5900">
+                    <figcaption><a href = "cpu_pages/Ryzen-9-5900.html"><strong>Ryzen-9-5900</strong></a></figcaption>
+                </li>
+                <li>  
+                     <img src="../Images/CPUPages/Ryzen-9-5950X/AMD-9-5950X.jpg" alt="Ryzen-9-5950X">
+                     <figcaption><a href = "cpu_pages/Ryzen-9-5950X.html"><strong>Ryzen-9-5950X</strong></a></figcaption>
+                 </li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, data, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+            </script>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+        
+    </body>
+
+</html>

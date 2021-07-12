@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">Intel Core i5-8600K</h1>
+            <p>Intel - Core i5-8600K 8th Gen Coffee Lake 6-Core - 6-Thread 3.7 GHz (4.3 GHz Turdbo) Socket LGA 1151 Unlocked Desktop Processor - Silver.</p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/CPUPages/i5-8600K/Intel-Core-i5-8600K.jpg" alt = "Intel-Core-i5-8600K">
+                        <figcaption><strong>$259.98 - $285.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div class="Add">
+                            <div>
+                                <button class="Add" onclick="AddCPU(this)">
+                                    Add Item
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>Intel</li>
+                    <li><strong>Core Count: </strong>6</li>
+                    <li><strong>Core Clock: </strong>3.60 GHz </li>
+                    <li><strong>Boost Clock: </strong>4.30 GHz </li>
+                    <li><strong>TDP: </strong>95 W</li>
+                    <li><strong>Series: </strong>Intel Core i5</li>
+                    <li><strong>Microarchitecture: </strong>Coffee Lake</li>
+                    <li><strong>Core Family: </strong>Coffee Lake</li>
+                    <li><strong>Socket: </strong> LGA1151</li>
+                    <li><strong>Integrated Graphics: </strong>Intel UHD Graphics 630</li>
+                    <li><strong>Maximum Supported Memory: </strong>128 GB</li>
+                    <li><strong>ECC Support: </strong>No</li>
+                    <li><strong>Packaging: </strong>Boxed</li>
+                    <li><strong>Includes CPU Cooler: </strong>No</li>
+                    <li><strong>L1 Cache: </strong>6 x 32 kB Instruction, 6 x 32 kB Data</li>
+                    <li><strong>L2 Cache: </strong>6 x 256 kB</li>
+                    <li><strong>L3 Cache: </strong>1 x 9 MB</li>
+                    <li><strong>Lithography: </strong>14 nm</li>
+                    <li><strong>Simultaneous Multithreading: </strong>No</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li>
+                        <img src="../../Images/CPUPages/i5-8600K/8600K(2).PNG" alt="MicroFinder Logo">
+
+                    </li>
+                    <li>
+                        <img src="../../Images/CPUPages/i5-8600K/8600K.PNG" alt="MicroFinder Logo">
+                    </li>
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- Legacy Intel® Core™ Processors.</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/Intel-i5-8600K-Desktop-Processor-unlocked/dp/B0759FKH8K"><img src="../../Images/logo/amazon.png" alt="Intel Core i5-8600K"></a>
+                    </li>
+                    <li>
+                        <a href = "https://www.bestbuy.com/site/intel-core-i5-8600k-8th-gen-coffee-lake-6-core-6-thread-3-7-ghz-4-3-ghz-turdbo-socket-lga-1151-unlocked-desktop-processor-silver/6163018.p?skuId=6163018"><img src="../../Images/logo/best_buy.png" alt="Intel Core i5-8600K"></a>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/intel-core-i5-8th-gen-core-i5-8600k/p/N82E16819117825?Description=core%20i5-8600k&cm_re=core_i5-8600k-_-19-117-825-_-Product"><img src="../../Images/logo/newegg.png" alt="Intel Core i5-8600K"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>Selected this item to be the brain of our new computer. It's performance has surpassed all my expectations. Multitasking is a breeze and games run like butter! Great CPU! - User from Best Buy</li>
+                    <li>Updated my system with a new mother board and CPU. This processor is fast! My old processor was bottlenecking when I was gaming and I wanted to get the most out of my GPU and Dell 27" 144p 144hz gsync monitor. After upgrading my system, my frame rates are not as limited now. On par with the 7 series i7 7700k. Have a corsair hydro h60 on it and it hasn't been hotter than 30c while gaming. My i7 with its stock cooler and heat sink would average 60c. - User from Best Buy</li>
+                    <li>I upgraded from a fx 8350 black edition to this cpu. Ive always been a amd fan boy but when i went to intel, it was a whole new world! Ill never look back to amd. The majority of games for pc are optimized for single core use, since switching i have gained a nice 40 plus fps in a lot of my games i play. Along with the speed of this cpu just is outstanding. I have the cpu oced to 4.8 on liquid cooled and it runs stable and even faster. I couldnt be any happier as this cpu will be good for many years to come - User from Best Buy</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

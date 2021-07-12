@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">Samsung-970-Evo-Plus-250 GB SSD</h1>
+            <p>The ultimate in performance, upgraded. Faster than the 970 EVO, the 970 EVO Plus is powered by the latest V-NAND technology and firmware optimization. It maximizes the potential of NVMe® bandwidth for unbeatable computing. Comes in capacities of up to 1TB, with reliability of up to 600 TBW.</p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/SSDPages/M.2-512GB-NVMe-PCLe/m2.jpg" alt = "Samsung-970-Evo-Plus-250 GB SSD">
+                        <figcaption><strong>$59.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddStorage(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>Samsung</li>
+                    <li><strong>Capacity: </strong>250 GB</li>
+                    <li><strong>Price / GB: </strong>$0.240</li>
+                    <li><strong>Type: </strong>SSD</li>
+                    <li><strong>Cache: </strong>512 MB</li>
+                    <li><strong>Form Factor: </strong>M.2-2280</li>
+                    <li><strong>Interface: </strong>M.2 (M)</li>
+                    <li><strong>NVME: </strong>Yes</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li>
+                        <img src="../../Images/SSDPages/M.2-512GB-NVMe-PCLe/512GB(2).PNG" alt="MicroFinder Logo">
+
+                    </li>
+                    <li>
+                        <img src="../../Images/SSDPages/M.2-512GB-NVMe-PCLe/512GB.PNG" alt="MicroFinder Logo">
+                    </li>
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- INNOVATIVE V-NAND TECHNOLOGY: Powered by Samsung V-NAND Technology, the 970 EVO Plus SSD’s NVMe interface (PCIe Gen 3.0 x4 NVMe 1.3) offers enhanced bandwidth, low latency, and power efficiency ideal for tech enthusiasts, high end gamers, and 4K & 3D content designers.</li>
+                    <li class = "please">- BREAKTHROUGH READ WRITE SPEEDS: Sequential read and write performance levels of up to 3,500MB/s and 3,300MB/s, respectively; Random Read (4KB, QD32): Up to 600,000 IOPS Random Read. Operating Temperature: 0 - 70 ℃.</li>
+                    <li class = "please">- PERFORMANCE OPTIMIZATION AND DATA SECURITY: Seamless cloning and file transfers with Samsung Magician Software, the ideal SSD management solution for performance optimization and data security with automatic firmware updates.</li>
+                    <li class = "please">- SUPERIOR HEAT DISSIPATION: Samsung’s Dynamic Thermal Guard automatically monitors and maintains optimal operating temperatures to minimize performance drops.</li>
+                    <li class = "please">- 5-YEAR LIMITED WARRANTY: 5-year limited warranty or 600 TBW (Terabytes Written). Power consumption (Idle) - Max. 30 mW Actual power consumption may vary depending on system hardware & configuration. Voltage - 3.3 V ± 5 % Allowable voltage.</li>
+
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/dp/B07MG119KG?tag=pcpapi-20&linkCode=ogi&th=1"><img src="../../Images/logo/amazon.png" alt="Amazon Samsung-970-Evo-Plus-250 GB SSD"></a>
+                    </li>
+                    <li>
+                        <a href = "https://www.bestbuy.com/site/samsung-970-evo-plus-250gb-internal-pci-express-3-0-x4-nvme-solid-state-drive-with-v-nand-technology/6324467.p?skuId=6324467"><img src="../../Images/logo/best_buy.png" alt="Best Buy Samsung-970-Evo-Plus-250 GB SSD"></a>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/samsung-970-evo-plus-250gb/p/N82E16820147741"><img src="../../Images/logo/newegg.png" alt="Newegg Samsung-970-Evo-Plus-250 GB SSD"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>Got two so onto cloning to see how fast that works. - User from Newegg</li>
+                    <li>This was my first M.2 experience. I worried about how to get Windows on to this thing and Googled for advice. Much of the available advice is a couple of years old or more and is already obsolete. I found lots of conflicting advice such as: "Enable CSM", "Don't enable CSM", "Turn off Secure Boot", "Don't turn off Secure Boot", etc. The one constant was that the newer the advice the fewer and simpler were the suggestions offered. Since my ASUS motherboard is reasonably new (oldest BIOS dated 2-23-2018), and since the mobo manual said nothing about tweaking the BIOS for an NVMe drive (It is a pretty skimpy manual), I decided to place my bets on ASUS . If they saw fit not to advise me on using this drive I probably didn't need any such advice. So I installed the newest BIOS file, restored the "Optimized Defaults" (which included an AMI native NVMe driver), stuck in my Windows USB stick, rebooted and let it rip. My faith was well placed. ASUS, Samsung and Windows got together and worked their magic. 10 minutes later I was dotting the i's and crossing the t's. Windows had no trouble finding and using this drive. And I had no trouble at all since I just used the Optimized Defaults. So far I'm loving this drive and I have no problem recommending it. - User from Newegg</li>
+                    <li>I heard about the great strides M.2 NVMe expansion cards have made for increasing boot/load and read/write times, and I wasn't disappointed. You won't notice as big of a difference between a normal SATA SSD and an m.2 NVMe card as you would from a regular HDD, but its still pretty noticeable and I would recommend it 100%. Not a con by any means but it is a lil different to install with it being an expansion card (slot), but not difficult by any means. Just make sure your mobo has a compatible m.2 NVMe slot and make sure you don't buy just any m.2 drive make sure its NVMe to get the full value of your money/upgrade. - User from Newegg</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

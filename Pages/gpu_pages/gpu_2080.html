@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../../styles.css">
+        <script src="../../ShowHide.js"  type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <!-- Google Oath for sign in -->
+                    <li>
+                        <a href="../../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <label class="toggle">
+                                <span class="onoff">Show Definitions</span>
+                                <input type="checkbox" />
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <section class = "info">
+            <h1 class="Name">RTX 2080</h1>
+            <p>The GeForce RTX™ 2080 is powered by the NVIDIA Turing™ architecture to give you incredible new levels of gaming realism, speed, power efficiency, and immersion.. This is graphics reinvented. </p>
+        </section>
+
+        <section class="Item">
+            <div class="Description">
+                <ul class="Item">
+                    <li>
+                        <img src="../../Images/gpu_images/3090.jpg" alt = "RTX 2080">
+                        <figcaption><strong>$1,499.99</strong></figcaption>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="Add" onclick="AddGPU(this)">
+                                Add Item
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="Specs">
+                    <li class = "work"><strong>Specifications</strong></li>
+                    <li><strong>Manufacturer: </strong>NVIDIA</li>
+                    <li><strong>Chipset: </strong>GeForce RTX 2080</li>
+                    <li><strong>Memory: </strong>8 GB</li>
+                    <li><strong>Memory Type: </strong>GDDR6</li>
+                    <li><strong>Core Clock: </strong>1515 MHz</li>
+                    <li><strong>Boost Clock: </strong>1800 MHz</li>
+                    <li><strong>Effective Memory Clock: </strong>14000 MHz</li>
+                    <li><strong>Interface: </strong>PCIe x16</li>
+                    <li><strong>Color: </strong>Black / Silver</li>
+                    <li><strong>SLI/CrossFire: </strong>2-way SLI Capable</li>
+                    <li><strong>Frame Sync: </strong>G-Sync</li>
+                    <li><strong>Length: </strong>267 mm</li>
+                    <li><strong>TDP: </strong>225 W</li>
+                    <li><strong>DVI Ports: </strong>0</li>
+                    <li><strong>HDMI Ports: </strong>1</li>
+                    <li><strong>Mini-HDMI Ports: </strong>0</li>
+                    <li><strong>DisplayPort Parts: </strong>3</li>
+                    <li><strong>Expansion Slot Width: </strong>2 Fans</li>
+                    <li><strong>External Power: </strong>1 PCIe 8-pin + 1 PCIe 6-pin</li>
+                    <li><strong>Display Port: </strong>3</li>
+                    <li><strong>HDMI: </strong>1</li>
+                </ul>
+
+                <ul class="Benchmarks">
+                    <li>
+                        <img src="../../Images/gpu_images/2080Stat/2080(2).PNG" alt="MicroFinder Logo">
+
+                    </li>
+                    <li>
+                        <img src="../../Images/gpu_images/2080Stat/2080.PNG" alt="MicroFinder Logo">
+                    </li>
+                    <li class = "work"><strong>Features</strong></li>
+                    <li class = "please">- Dedicated ray tracing hardware enables fast real-time ray tracing with physically accurate shadows, reflections, refractions, and global illumination.</li>
+                    <li class = "please">- Artificial intelligence is driving the greatest technology advancement in history, and Turing is bringing it to computer graphics. Experience AI-processing horsepower that accelerates gaming performance with NVIDIA DLSS 2.0.</li>
+                    <li class = "please">- Variable Rate Shading focuses processing power on areas of rich detail, boosting overall performance without affecting perceived image quality. Mesh Shaders advanced geometry processing supports an order of magnitude more objects per-scene, allowing the creation of rich complex worlds.</li>
+                    <li class = "please">- Simultaneous floating point and integer processing enables Turing GPUs to more efficiently process the compute heavy workloads of modern games.</li>
+                </ul>
+                
+            </div>
+
+            
+        </section>
+
+        
+        <section> 
+            <div class="Retail">
+                <h1>Shopping</h1>
+                <ul>
+                    <li>        
+                        <a href = "https://www.amazon.com/GeForce-RTX-2080/s?k=GeForce+RTX+2080"><img src="../../Images/logo/amazon.png" alt="Amazon 2080"></a>
+                    </li>
+                    <li>
+                        <a href = "https://www.bestbuy.com/site/nvidia-geforce-rtx-2080-founders-edition-8gb-gddr6-pci-express-3-0-graphics-card/6291648.p?skuId=6291648"><img src="../../Images/logo/best_buy.png" alt="Best Buy 2080"></a>
+                    </li>
+                    <li>     
+                        <a href = "https://www.newegg.com/p/pl?N=100007709%20601321493"><img src="../../Images/logo/newegg.png" alt="Newegg 2080"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class = "Reviews">
+                <h1>Reviews from Customers</h1>
+                <ul>
+                    <li>Throughout the years I have owned my fair share of video cards and as of late I started opting for getting Founders Edition (or reference ) cards made by Nvidia themselves. I have had great performance with this card, it’s not noisy despite having 2 fans, it doesn’t get too hot and it looks beautiful in my build. - User from Best Buy</li>
+                    <li>Easy installation, a little hefty but you definitely fee the value of the product. Runs amazing. Definitely recommend this product for its amazing graphics, performance and sleek appearance. Makes any build look and run amazing! - User from Best Buy</li>
+                    <li>I upgraded from a gtx 1080 and I'm loving the performance of this card. I can now play all my games with ultra settings and get well over 60fps I have no regrets about buying this card. - User from Best Buy</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../../index.html">
+                        <img src="../../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="../Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+
+</html>

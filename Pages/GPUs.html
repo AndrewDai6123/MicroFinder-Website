@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>MicroFinder</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+
+    <body>
+        <header> 
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Build List</a>
+                        <!-- This can lead to a new page where the user can create
+                        and manage their pc build lists -->
+                    </li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Settings
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" >
+                            <label class="toggle">
+                                <span class="onoff">Hide Definitions</span>
+                                <input type="checkbox" id="toggle" onclick="ShowHide(this)"/>
+                                <span class="slider round"></span>
+                              </label>
+                        </div>
+                        <!-- We should use webstorage for the functionalities
+                            https://www.w3schools.com/html/html5_webstorage.asp -->
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <script type="text/javascript">
+            function ShowHide(toggle) {
+                var info = document.getElementById("info");
+                info.style.display = toggle.checked ? "none" : "block";
+            }
+        </script>
+
+        <section>
+            <h1>Graphics Card</h1>
+            <p id="info">A graphics card is a display adapter or video card installed within most computing devices to display graphical data with high clarity, color, definition, and over appearance. Graphics cards are responsible for rending an image on to your monitor. The better your graphics card the better and smoother images can be produced, allowing gameplay to feel smooth and not cause lag.</p>
+        </section>
+
+        <section class = "search-container">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for computer parts here..." title="Type in a name">
+            <button type="submit"><i class="fa fa-search"></i>Search</button>
+        </section>
+
+        <section class = "shop_page">
+            <ul id = "myUL">
+                <li>  
+                    <img src="../Images/gpu_images/3090.jpg" alt ="RTX 3090">
+                    <figcaption><a href = "gpu_pages/gpu_3090.html"><strong>RTX 3090</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/gpu_images/3080.jpg" alt="Graphics Cards">
+                    <figcaption><a href = "gpu_pages/gpu_3080.html"><strong>RTX 3080</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/gpu_images/3070.jpg" alt="Graphics Cards">
+                    <figcaption><a href = "gpu_pages/gpu_3070.html"><strong>RTX 3070</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/gpu_images/3060.jpg" alt="Graphics Cards">
+                    <figcaption><a href = "gpu_pages/gpu_3060.html"><strong>RTX 3060 Ti</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/gpu_images/2080_Super.jpg" alt="Graphics Cards">
+                    <figcaption><a href = "gpu_pages/gpu_2080s.html"><strong>RTX 2080 Super</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/gpu_images/2080_Ti.jpg" alt="Graphics Cards">
+                    <figcaption><a href = "gpu_pages/gpu_2080ti.html"><strong>RTX 2080 Ti</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/gpu_images/2080.jpg" alt="Graphics Cards">
+                    <figcaption><a href = "gpu_pages/gpu_2080.html"><strong>RTX 2080</strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/gpu_images/2070.jpg" alt="Graphics Cards">
+                    <figcaption><a href = "gpu_pages/gpu_2070.html"><strong>RTX 2070 </strong></a></figcaption>
+                </li>
+                <li>  
+                    <img src="../Images/gpu_images/6900_XT.jpg" alt="Graphics Cards">
+                    <figcaption><a href = "gpu_pages/gpu_6900.html"><strong>AMD RX 6900-XT</strong></a></figcaption>
+                </li>
+                <li>  
+                     <img src="../Images/gpu_images/6800_XT.jpg" alt="Graphics Cards">
+                     <figcaption><a href = "gpu_pages/gpu_6800.html"><strong>AMD RX 6800-XT</strong></a></figcaption>
+                 </li>
+            </ul>
+        </section>
+
+        <section>
+            <div class="home-logo">
+                <button>
+                    <a href="../index.html">
+                        <img src="../logo.png" alt="MicroFinder Logo">
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <script>
+            function myFunction() {
+                var input, filter, ul, li, a, data, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+            </script>
+
+
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="About us.html">About us</a>
+                    </li>
+                    <li>
+                        <a href="Support us.html">Support us</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+        
+    </body>
+
+</html>
