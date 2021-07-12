@@ -1,0 +1,339 @@
+/* Shared styles for all pages */
+body{ 
+    background: rgb(44, 47, 51);
+    color: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header { 
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: right;
+}
+nav li {
+    display: inline-block;
+    margin: 0px 20px;
+    text-align: center;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Settings css */
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: inherit;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 8%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle {
+    position: relative;
+  }
+  
+  .toggle input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle .onoff {
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .slider {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: #333;
+    transition: 0.4s;
+    width: 100px;
+    height: 36px;
+  }
+  
+  .slider:before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 40px;
+    background-color: #fff;
+    transition: 0.4s;
+    top: 5px;
+    left: 5px; 
+  }
+  
+  input:checked + .slider {
+    background-color: lightskyblue;
+    box-shadow: 0 0 6px cyan;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(50px);
+  }
+  
+  .slider.round {
+    border-radius: 20px;
+  }
+  .slider.round::before {
+    border-radius: 20px;
+  }
+
+section {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    font-size: 125%;
+}
+
+
+.home-logo button{
+    background: transparent;
+    border: none;
+}
+
+footer { 
+    background: black;
+    padding: 10px 60px;
+    font-size: 12px;
+}
+footer ul{
+    text-align: center;
+}
+
+/* Index page styles */
+.search-container input[type=text] {
+    margin-top: 50px;
+    padding: 5px;
+    width: 50%;
+    border:  rgb(44, 47, 51);
+    border-radius: 10px 0px 0px 10px;
+    font-size: 17px;
+}
+.search-container button {
+    text-align: center;
+    margin: -4px;
+    padding: 0px 5px 4px 5px;
+    text-align: center;
+    background: #ddd;
+    font-size: 22px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+.search-container button:hover {
+    background: #ccc;
+}
+
+.build-list table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.build-list img {
+    width: 100px;
+    height: 100px;
+}
+
+.build-list td, th {
+    border: 2px solid black;
+    background: gray;
+    height: 50px;
+    text-align: center;
+}
+
+.list-options div{
+    display: inline-flex;
+    flex-direction: row-reverse;
+}
+.list-options button{
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.share button{
+    background-color: cornflowerblue;
+}
+.print button{
+    background-color: green;
+}
+.clear button{
+    background-color: darkred;
+}
+
+/* Welcome Page styles */
+.Welcome-Header{
+    background-color: rgb(3, 3, 22);
+    padding: 30px;
+    display: grid;
+    flex-direction: row-reverse;
+}
+
+.Welcome-Header .home-logo{
+    float: left;
+}
+.Start-Now button{
+    background-color: palegreen;
+    cursor: pointer;
+    width: 300px;
+    height: 75px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* Shop Pages styles */
+.shop_page ul li{
+    display:inline-block;
+    margin-right: 50px;
+}
+
+.shop_page ul li img{
+    width: 250px;
+    height: 350px;
+    box-shadow: navy 0 0 20px;
+}
+
+.shop_page{
+    padding: 20px;
+    margin: 10px;
+    flex-direction: row;
+    text-align: center;
+    font-size: 125%;
+}
+
+
+/* Item Pages styles */
+.Description{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+.Description .Item{
+    list-style-type: none;
+    text-align: left;
+    margin-left: 150px;
+
+}
+.Description .Item img{
+    width: 250px;
+    height: 350px;
+    box-shadow: navy 0 0 20px;
+}
+.Description figcaption{
+    font-weight: bolder;
+    color: rgba(73, 209, 168, 0.986);
+    font-size: 150%;
+}
+.Add {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(0, 255, 0);
+}
+.Description .Specs{
+    list-style-type: none;
+    flex-direction: row;
+    text-align: left;
+    margin-left: 150px;
+}
+
+.Description .Benchmarks .work{
+    font-size: 150%;
+    color: rgba(73, 209, 168, 0.986);
+    margin-left: 150px;
+}
+
+.Description .Benchmarks .please{
+    margin-left: 150px;
+    text-align: left;
+}
+
+
+.Description .Specs .work{
+    font-size: 150%;
+    color: rgba(73, 209, 168, 0.986);
+    text-align: left;
+
+}
+.Description .Benchmarks img{
+    width: 750px;
+    height: 150px;
+    margin-left: 150px;
+    box-shadow: navy 0 0 20px;
+}
+
+.Retail ul li{
+    display:inline-block;
+    margin-right: 50px;
+}
+
+.Retail img{
+    width: 300px;
+    height: 200px;
+    box-shadow: navy 0 0 10px;
+    background-color: rgba(73, 209, 168, 0.986);
+}
+
+.Reviews ul li{
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+/* About us page */
+.About-Us{
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Support us page */
+.Support-Us{
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
